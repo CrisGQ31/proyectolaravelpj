@@ -3,6 +3,7 @@
 use App\Http\Controllers\CursoLaravelController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\Suscribed;
+use App\Http\Controllers\PostController;
 
 //Route::get('/', function () {
 //    return view('welcome');
