@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 class CursoLaravelController extends Controller
 {
 
+
+    public function getNames(){
+        return view('welcome', ['name' => 'Cristhian']);
+    }
     public function suma($A,$B)
     {
 
@@ -42,6 +46,12 @@ class CursoLaravelController extends Controller
         $resultado = ($A/$B);
 
         return "La division de los dos numeros es: ". $resultado;
+    }
+
+    public function index()
+    {
+        $name = 'Cristhian';
+        return view('layout.child', compact('name'));
     }
 
 
